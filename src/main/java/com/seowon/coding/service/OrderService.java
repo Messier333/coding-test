@@ -151,6 +151,8 @@ public class OrderService {
      * - 시나리오: 일괄 배송 처리 중 진행률을 저장하여 다른 사용자가 조회 가능해야 함.
      * - 리뷰 포인트: proxy 및 transaction 분리, 예외 전파/롤백 범위, 가독성 등
      * - 상식적인 수준에서 요구사항(기획)을 가정하며 최대한 상세히 작성하세요.
+     *
+     *
      */
     @Transactional
     public void bulkShipOrdersParent(String jobId, List<Long> orderIds) {
